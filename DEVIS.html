@@ -37,7 +37,7 @@
     <section id="mainpage">
                   <!-------------------------------------INFO ET PHOTO--------------------------------------------------->
         <div class="info-container">
-            <img src="images/DE LOGO.png">
+            <img src="images/LOGO DE.png">
             <ul>
                 <li><b>Du Lundi au vendredi 9h00-17h00</b></li>
                 <li><b>06 Allée de l'horloge Bois Court , Le Tampon, Réunion, Réunion</b></li>
@@ -46,55 +46,56 @@
             </ul>    
         </div>
                     <!-------------------------------------FORM INPUT--------------------------------------------------->
-        <div class="form">
-            <form>
-                <div class="form-group">
-                  <label for="inputName">Nom</label>
-                  <input type="text" class="form-control" id="inputName" placeholder="Votre Nom">
-                </div>
-                <div class="form-group">
-                  <label for="inputName">Prénom</label>
-                  <input type="text" class="form-control" id="inputName" placeholder="Votre Prénom">
-                </div>
-                <div class="form-group">
-                  <label for="inputPhone">Téléphone</label>
-                  <input type="tel" class="form-control" id="inputPhone" placeholder="Votre numéro de téléphone">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Adresse E-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple@email.com">
-                    <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre adresse e-mail avec qui que ce soit.</small>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    SIGNALETIQUE
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    TEXTILE
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    IMPRESSION NUMERIQUE
-                  </label>
-                </div>
-                <div class="form-group">
-                  <label for="inputName">Objet</label>
-                  <input type="text" class="form-control" id="objectName" placeholder="Objet">
-                </div>
-                <div class="form-group">
-                  <label for="inputMessage">Message</label>
-                  <textarea class="form-control" id="inputMessage" rows="4" placeholder="Votre message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button> 
-            </form>
-        </div>
-    </section>
+                    <div class="form">
+                      <form action="https://formsubmit.co/793be343382836cfe48aea38e54bbb5f" method="POST">
+                          <!----honeypot-->
+                          <input type="text" name="_honey" style="display:none">
+                          <!--ENLEVER CAPTCHA-->
+                          <input type="hidden" name="_captcha" value="false">
+          
+                          <div class="form-group">
+                            <label for="LastName">Nom</label>
+                            <input type="text" class="form-control" name=Nom id="lastName" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="firstName">Prénom</label>
+                            <input type="text" class="form-control"  name=Prénom id="firstName" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="Téléphone">Téléphone</label>
+                            <input type="tel" class="form-control"  name=Téléphone id="Phone" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="Email">Adresse E-mail</label>
+                              <input type="email" class="form-control"  name=Email id="Email" aria-describedby="emailHelp" placeholder="exemple@email.com" required>
+                              <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre adresse e-mail avec qui que ce soit.</small>
+                          </div>
+                          <div class="checkbox">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" name="SIGNALETIQUE" value="SIGNALETIQUE" id="checkSignaletique">
+                              <label class="form-check-label" for="checkSignaletique">SIGNALETIQUE</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" name="TEXTILE" value="TEXTILE" id="checkTextile">
+                              <label class="form-check-label" for="checkTextile">TEXTILE</label>
+                          </div>
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox" name="IMPRESSION_NUMERIQUE" value="IMPRESSION NUMERIQUE" id="checkImpression">
+                              <label class="form-check-label" for="checkImpression">IMPRESSION NUMERIQUE</label>
+                          </div>
+                        </div>
+                          <div class="form-group">
+                            <label for="Objet">Objet</label>
+                            <input type="text" class="form-control"  name=Objet id="objectName" placeholder="Objet">
+                          </div>
+                          <div class="form-group">
+                            <label for="Message">Message</label>
+                            <textarea class="form-control"  name=Message id="inputMessage" rows="4" required></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Envoyer</button> 
+                      </form>
+                  </div>
+              </section>
     <!-------------------------------FOOTER------------------------------------------------->
 
 
@@ -110,13 +111,7 @@
                     <li><a href="#">06 Allée de l'horloge Bois Court , Le Tampon, Réunion, Réunion</a></li>
                 </ul>
             </div>
-            <div class="column">
-                <h2>Politique</h2>
-                <ul>
-                    <li><a href="#">Confidentialité</a></li>
-                    <li><a href="#">Conditions d'utilisation</a></li>
-                </ul>
-            </div>
+            
             <div class="column">
                 <h2>Réseaux</h2>
                 <ul class="social-icons">
@@ -127,6 +122,5 @@
         </footer>
     </section>
 </html>
-
 
 
