@@ -3,11 +3,21 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
  /************************MOBILE FIRST************/
  @media only screen and (max-width: 768px) {
     .form {
         width: 100%; /* Full width on smaller screens */
     }
+    .info-container img {
+        max-width: 400px;
+        padding-bottom: 50px;
+    }
+
+
     
 
     /******************** FOOTER SECTION *******************/
@@ -60,7 +70,7 @@
 
 
 .navbar {
-    background: linear-gradient(to right, #13378e, #13378e);
+    background: linear-gradient(to right, #14406c, #14406c);
     
 }
 
@@ -91,20 +101,20 @@
 
 #navbarNav .button h6{
     margin: 10px 10px;
-    color: #13378e;
+    color: #14406c;
     
 
 }
 
 #navbarNav .button:hover{
-    background-color: #13378e;
+    background-color: #14406c;
     -webkit-background-composite:1s;
     
 }
 
 #navbarNav .button h6:hover{
     margin: 10px 10px;
-    color: #13378e;
+    color: #14406c;
     
 
 }
@@ -122,9 +132,9 @@
 }
 
 .info-container img {
-    max-width: 100%;
+    width: 600px;
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .info-container ul {
@@ -152,18 +162,17 @@
     margin-bottom: 20px;
 }
 
-
-
 .form-check {
     margin-bottom: 15px;
+    
 }
 
-.btn-primary {
+.btn-primary  {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     width: 250px;
-    background-color: #13378e;
+    background-color: #14406c;
     color: white;
 }
 /*************************************FOOTER******************************************************/
