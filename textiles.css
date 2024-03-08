@@ -188,6 +188,7 @@ html{
 /*************************************SERVICE******************************************************/
 #services{
     background-color: #faf8ef;
+    overflow: hidden;
 }
 .container h1{
     display: flex;
