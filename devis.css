@@ -120,6 +120,7 @@ html{
 }
 /************************************FORM******************************************************/
 #mainpage {
+    background-color: #faf8ef;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -165,6 +166,15 @@ html{
 .form-check {
     margin-bottom: 15px;
     
+}
+.form h5{
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #14406c;
+    
+
 }
 
 .btn-primary  {

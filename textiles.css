@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 /************************MOBILE FIRST************/
 @media only screen and (max-width:768px) {
     *{
@@ -91,7 +95,7 @@
         margin: 0 auto;
         padding-top: 50px;
         text-transform: uppercase;
-        color: #13378e;
+        color: #14406c;
         font-size:30px ;
     }
     .container p{
@@ -134,7 +138,7 @@
 
 
 .navbar {
-    background: linear-gradient(to right, #13378e, #13378e);
+    background: linear-gradient(to right, #14406c, #14406c);
     
 }
 
@@ -165,7 +169,7 @@
 
 #navbarNav .button h6{
     margin: 10px 10px;
-    color: #13378e;
+    color: #14406c;
     
 
 }
@@ -175,20 +179,23 @@
 
 #navbarNav .button h6:hover{
     margin: 10px 10px;
-    color: #13378e;
+    color: #14406c;
     
 
 }
 
 
 /*************************************SERVICE******************************************************/
+#services{
+    background-color: #faf8ef;
+}
 .container h1{
     display: flex;
     justify-content: center;
     margin: 0 auto;
     padding-top: 50px;
     text-transform: uppercase;
-    color: #13378e;
+    color: #14406c;
     
     
 }

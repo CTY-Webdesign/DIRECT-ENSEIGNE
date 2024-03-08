@@ -1,3 +1,5 @@
+/*https://huemint.com/website-2/#palette=faf8ef-14406c-0065ab-1a99d5*/
+
 *{
     margin: 0;
     padding: 0;
@@ -170,13 +172,13 @@ html{
     padding: 50px 0px ;
     flex-direction: column;
     display: flex;
-    background-color: #fffefe;
+    background-color: #faf8ef;
 }
 
 
 
 .Container{
-    color: #fffefe;
+    color: #faf8ef;
     padding-top: 50px;
     display: flex;
     justify-content: center;
@@ -210,18 +212,29 @@ html{
     color: #fffefe;
     
 }
+
+.Container{
+    background-color: #faf8ef;
+    color: #14406c;
+}
 #services h1{
-    padding-bottom: 40px  ;
+    padding-bottom: 40px;
     text-align: center;
 }
 .services{
     display: flex;
-    display: inline-flex;
+    justify-content: center;
     justify-content: space-evenly;
+    margin: 0 auto;
     width: 100%;
     text-transform: uppercase;
 }
 
+.listes-services1 h3{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
 .listes-services1 ul{
     list-style: none;
     line-height: 3;
@@ -260,7 +273,10 @@ html{
     transform: translateY(-10px);
 }
 /*************************************A PROPOS******************************************************/
-
+#info{
+    overflow: hidden;
+    background-color: #faf8ef;
+}
 #info h2{
     text-align: center;
     text-transform: uppercase;
