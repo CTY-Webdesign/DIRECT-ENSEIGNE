@@ -7,15 +7,76 @@ html{
     scroll-behavior: smooth;
 }
 /************************MOBILE FIRST************/
-@media only screen and (max-width:768px) {
-    *{
-        margin: 0;
-        padding: 0;
+@media (max-width:768px) {
+    .mobilenav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #14406c;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .mobilenav a{
+        display: flex;
+        flex-direction: column;
+        margin: 25px 25px;
+        text-transform: uppercase;
+        color: #faf8ef;
+        transition: color 0.3s ease;
+        
+    }
+    .mobilenav a:hover{
+        text-decoration: none;
+        color: #1a99d5;
+    }
+    .open-btn {
+        color: #fffeff;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    .btn-devis {
+        text-transform: uppercase;
+        background-color: #faf8ef;
+        color: #14406c;
+        text-decoration: none;
+        border: 2px solid #faf8ef;
+        border-radius: 16px;
+        transition: border 0.3s ease;
+        
+    }
+    
+    .btn-devis:hover {
+        border-color: #1a99d5;
+    }
+    
+    .btn-devis p{
+        margin: auto auto;
+        padding: 5px;
+        font-weight: 500;
+        align-items: center;
+        color: #14406c;
+        font-size:15px ;
+        transition: color 0.2s ease;
+        
+    }
+    .btn-devis p:hover {
+        color: #1a99d5;
+        border-radius: 16px;
     }
 
+    .sidenav a{
+        display: none;
+    }
     /*****************SERVICE*************/
-    @media only screen and (max-width: 768px) {
         .container h1 {
+            text-align: center;
             padding-top: 30px;
             font-size: 25px;
         }
@@ -36,49 +97,49 @@ html{
         .service {
             margin-bottom: 20px; 
         }
-    
-    }
-
-    /******************** FOOTER SECTION *******************/
-    #footer{
-        bottom: 0;
-        position: absolute;
-        background-color: black;
-        width: 100%;
-    }
-    
-    .column-footer{
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    
-    }
-    
-    .column ul{
-        list-style: none;
+        #footer{
+            bottom: 0;
+            position: absolute;
+            background-color: black;
+            width: 100%;
+        }
         
-    }
+        .column-footer{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        
+        }
+        
+        .column ul{
+            list-style: none;
+            
+        }
+        
+        .column ul a{
+            color: grey;
+        }
+        
+        .column h2{
+            font-size: 25px;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .column ul li{
+            text-align: center;
+            font-size: 15px;    
+        }
+        
+        .column ul li i{
+            padding-right: 10px;    
+        }
+
     
-    .column ul a{
-        color: grey;
-    }
     
-    .column h2{
-        font-size: 25px;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .column ul li{
-        text-align: center;
-        font-size: 15px;    
-    }
-    
-    .column ul li i{
-        padding-right: 10px;    
     }
 
-}
+
 /************************TABLETTE************/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     *{
@@ -128,63 +189,78 @@ html{
     
 
 }
-/*************************************NAVBAR SECTION******************************************************/
 
-#navbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
+/*****DESKTOP*****/
+@media only screen and (min-width: 601px) {
+    .open-btn{
+        display: none;
+    }
+    .mobilenav{
+        display: none;
+    }
 
-
-.navbar {
-    background: linear-gradient(to right, #14406c, #14406c);
+    .sidenav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #14406c;
+        height: 50px;
+        font-size:20px;
+        text-align: right;
+    }
     
-}
-
-#navbar .navbar-nav .nav-item {
-    padding: 0 50px;
+    .sidenav a{
+      color: #faf8ef;
+      margin-right: 5%;
+      text-transform: uppercase;
+      transition: color 0.3s ease;  
+      
     
-}
-
-#navbarNav .nav-link {
-    color: #fffefe;
-    font-weight: 600;
-    text-align: left;
-}
-
-.fa-bars {
-    color: #fffefe;
-    font-size: 30px;
-}
-
-.navbar-toggler {
-    outline: none;
-}
-
-#navbarNav .button{
-     
-    background-color: #fff;
-}
-
-#navbarNav .button h6{
-    margin: 10px 10px;
-    color: #14406c;
+    }
+    .sidenav a:hover{
+        color: #1a99d5;
+        text-decoration: none;
+        
+    }
     
-
-}
-#navbarNav .button a:hover{
-    text-decoration: none;
-}
-
-#navbarNav .button h6:hover{
-    margin: 10px 10px;
-    color: #14406c;
+    .closebtn{
+        display: none;
+    }
+    .btn-devis {
+        text-transform: uppercase;
+        background-color: #faf8ef;
+        color: #14406c;
+        text-decoration: none;
+        border: 2px solid #faf8ef;
+        border-radius: 16px;
+        transition: border 0.3s ease;
+        
+    }
     
-
+    .btn-devis:hover {
+        border-color: #1a99d5;
+    }
+    
+    .btn-devis p{
+        margin: auto auto;
+        padding: 10px;
+        font-weight: 500;
+        align-items: center;
+        color: #14406c;
+        font-size:15px ;
+        transition: color 0.2s ease;
+        
+    }
+    .btn-devis p:hover {
+        color: #1a99d5;
+        border-radius: 16px;
+    }    
 }
 
 
+.sidenav{
+    background-color: #14406c;
+}
 /*************************************SERVICE******************************************************/
 #services{
     background-color: #faf8ef;
@@ -197,7 +273,7 @@ html{
     padding-top: 50px;
     text-transform: uppercase;
     color: #14406c;
-    
+    cursor:  default;
     
 }
 .container p{
@@ -207,6 +283,7 @@ html{
     padding-top: 20px;
     text-align: center;
     font-size: 25px;
+    cursor:  default;
 }
 
  
@@ -226,12 +303,14 @@ html{
     flex-direction: column;
     text-align: center;
     padding: 20px 20px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
     
 }
 
 .service:hover{
     transform: translateY(-10px);
+    color: #1999d5;
+
 
 }
   

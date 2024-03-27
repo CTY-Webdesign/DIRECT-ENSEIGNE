@@ -11,6 +11,7 @@ html{
 
 
 @media (max-width: 768px) {
+    /****MOBILE NAVBAR***/
     .mobilenav{
         height: 100%;
         width: 0;
@@ -36,7 +37,14 @@ html{
         text-decoration: none;
         color: #1a99d5;
     }
-
+    .open-btn {
+        color: #fffeff;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        margin-left: 15px;
+    }
     .btn-devis {
         text-transform: uppercase;
         background-color: #faf8ef;
@@ -72,7 +80,7 @@ html{
     }
 
 
-
+    /***BANNER***/
     .image img{
         max-width: 500px;
         padding: 50px 50px;
@@ -94,18 +102,10 @@ html{
         list-style: none;
         line-height: 3;
         text-align: center;
-        font-weight: 200;
-        font-size: 5px;
-       
-    }
-    
-    .listes-services2 ul{
-        list-style: none;
-        line-height: 3;
-        text-align: center;
         font-weight: 500;
-        font-size: 10px;
-        
+        font-size: 15px;
+        text-transform: uppercase;
+       
     }
     
     
@@ -156,6 +156,7 @@ html{
 
 /**DESKTOP*/
 @media only screen and (min-width: 601px) {
+    /****desktop navbar***/
     .open-btn{
         display: none;
     }
@@ -219,6 +220,31 @@ html{
         color: #1a99d5;
         border-radius: 16px;
     }
+
+    /***services*/
+    
+    .services{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    
+    .listes-services1 h3{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .listes-services1 ul{
+        list-style: none;
+        line-height: 3;
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        margin: 0 auto;
+    }
     
 }
 
@@ -257,7 +283,7 @@ html{
 
 
 .image img{
-    width: 1000px;
+    width: 100vh;
     padding: 50px 50px;
     display: flex;
     justify-content: center;
@@ -287,28 +313,7 @@ html{
     padding-bottom: 40px;
     text-align: center;
 }
-.services{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    margin: 0 auto;
-    width: 100%;
-    text-transform: uppercase;
-}
 
-.listes-services1 h3{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-.listes-services1 ul{
-    list-style: none;
-    line-height: 3;
-    text-align: center;
-    font-weight: 500;
-    font-size: 20px;
-    margin: 0 auto;
-}
 
 .btn.btn-primary{
     background-color: #fff;

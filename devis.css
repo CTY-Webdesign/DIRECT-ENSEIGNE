@@ -9,6 +9,78 @@ html{
 
  /************************MOBILE FIRST************/
  @media only screen and (max-width: 768px) {
+    .mobilenav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #14406c;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .mobilenav a{
+        display: flex;
+        flex-direction: column;
+        margin: 25px 25px;
+        text-transform: uppercase;
+        color: #faf8ef;
+        transition: color 0.3s ease;
+        
+    }
+    .mobilenav a:hover{
+        text-decoration: none;
+        color: #1a99d5;
+    }
+    .open-btn {
+        color: #fffeff;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    .btn-devis {
+        text-transform: uppercase;
+        background-color: #faf8ef;
+        color: #14406c;
+        text-decoration: none;
+        border: 2px solid #faf8ef;
+        border-radius: 16px;
+        transition: border 0.3s ease;
+        
+    }
+    
+    .btn-devis:hover {
+        border-color: #1a99d5;
+    }
+    
+    .btn-devis p{
+        margin: auto auto;
+        padding: 5px;
+        font-weight: 500;
+        align-items: center;
+        color: #14406c;
+        font-size:15px ;
+        transition: color 0.2s ease;
+        
+    }
+    .btn-devis p:hover {
+        color: #1a99d5;
+        border-radius: 16px;
+    }
+
+    .sidenav a{
+        display: none;
+    }
+
+
+
+
+
+
     .form {
         width: 100%; /* Full width on smaller screens */
     }
@@ -60,64 +132,80 @@ html{
     }
 
 }
+
+@media only screen and (min-width: 601px) {
+    .open-btn{
+        display: none;
+    }
+    .mobilenav{
+        display: none;
+    }
+
+    .sidenav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #14406c;
+        height: 50px;
+        font-size:20px;
+        text-align: right;
+    }
+    
+    .sidenav a{
+      color: #faf8ef;
+      margin-right: 5%;
+      text-transform: uppercase;
+      transition: color 0.3s ease;  
+      
+    
+    }
+    .sidenav a:hover{
+        color: #1a99d5;
+        text-decoration: none;
+        
+    }
+    
+    .closebtn{
+        display: none;
+    }
+    .btn-devis {
+        text-transform: uppercase;
+        background-color: #faf8ef;
+        color: #14406c;
+        text-decoration: none;
+        border: 2px solid #faf8ef;
+        border-radius: 16px;
+        transition: border 0.3s ease;
+        
+    }
+    
+    .btn-devis:hover {
+        border-color: #1a99d5;
+    }
+    
+    .btn-devis p{
+        margin: auto auto;
+        padding: 10px;
+        font-weight: 500;
+        align-items: center;
+        color: #14406c;
+        font-size:15px ;
+        transition: color 0.2s ease;
+        
+    }
+    .btn-devis p:hover {
+        color: #1a99d5;
+        border-radius: 16px;
+    }    
+}
+
+
+.sidenav{
+    background-color: #14406c;
+}
 /*************************************NAVBAR SECTION******************************************************/
 
-#navbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
 
-
-.navbar {
-    background: linear-gradient(to right, #14406c, #14406c);
-    
-}
-
-#navbar .navbar-nav .nav-item {
-    padding: 0 50px;
-    
-}
-
-#navbarNav .nav-link {
-    color: #fffefe;
-    font-weight: 600;
-    text-align: left;
-}
-
-.fa-bars {
-    color: #fffefe;
-    font-size: 30px;
-}
-
-.navbar-toggler {
-    outline: none;
-}
-
-#navbarNav .button{
-     
-    background-color: #fff;
-}
-
-#navbarNav .button h6{
-    margin: 10px 10px;
-    color: #14406c;
-    
-
-}
-
-#navbarNav .button:hover{
-    background-color: #14406c;
-    -webkit-background-composite:1s;
-    
-}
-
-#navbarNav .button h6:hover{
-    margin: 10px 10px;
-    color: #14406c;
-    
-
-}
 /************************************FORM******************************************************/
 #mainpage {
     background-color: #faf8ef;
