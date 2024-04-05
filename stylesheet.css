@@ -1,4 +1,4 @@
-/* https://huemint.com/website-2/#palette=faf8ef-14406c-0065ab-1a99d5 */
+/*https://huemint.com/website-2/#palette=1a1e28-ec008c-fff200-00aeef */
 
 *{
     margin: 0;
@@ -19,7 +19,7 @@ html{
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #14406c;
+        background-color: #1a1e28;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -35,7 +35,7 @@ html{
     }
     .mobilenav a:hover{
         text-decoration: none;
-        color: #1a99d5;
+        color: #ec008c;
     }
     .open-btn {
         color: #fffeff;
@@ -47,17 +47,19 @@ html{
     }
     .btn-devis {
         text-transform: uppercase;
-        background-color: #faf8ef;
-        color: #14406c;
+        background-color: #ec008c;
+        color: #faf8ef;
         text-decoration: none;
-        border: 2px solid #faf8ef;
+        border: 2px solid #ec008c;
         border-radius: 16px;
         transition: border 0.3s ease;
         
     }
     
     .btn-devis:hover {
-        border-color: #1a99d5;
+        border-color: #faf8ef;
+        background-color: #faf8ef;
+        border: #ec008c solid 2px;
     }
     
     .btn-devis p{
@@ -65,13 +67,13 @@ html{
         padding: 5px;
         font-weight: 500;
         align-items: center;
-        color: #14406c;
+        color: #faf8ef;
         font-size:15px ;
         transition: color 0.2s ease;
         
     }
     .btn-devis p:hover {
-        color: #1a99d5;
+        color: #ec008c;
         border-radius: 16px;
     }
 
@@ -168,7 +170,7 @@ html{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        background-color: #14406c;
+        background-color: #1a1e28;
         height: 50px;
         font-size:20px;
         text-align: right;
@@ -183,7 +185,7 @@ html{
     
     }
     .sidenav a:hover{
-        color: #1a99d5;
+        color: #ec008c;
         text-decoration: none;
         
     }
@@ -193,17 +195,18 @@ html{
     }
     .btn-devis {
         text-transform: uppercase;
-        background-color: #faf8ef;
-        color: #14406c;
+        background-color: #ec008c;
+        color: #faf8ef;
         text-decoration: none;
-        border: 2px solid #faf8ef;
+        border: 2px solid #ec008c;
         border-radius: 16px;
-        transition: border 0.3s ease;
+        transition: border 0.3s ease, background-color 0.3s ease, color 0.3s ease;
         
     }
     
     .btn-devis:hover {
-        border-color: #1a99d5;
+        border-color: #ec008c;
+        background-color: #faf8ef;
     }
     
     .btn-devis p{
@@ -211,13 +214,13 @@ html{
         padding: 10px;
         font-weight: 500;
         align-items: center;
-        color: #14406c;
+        color: #faf8ef;
         font-size:15px ;
         transition: color 0.2s ease;
         
     }
     .btn-devis p:hover {
-        color: #1a99d5;
+        color: #ec008c;
         border-radius: 16px;
     }
 
@@ -250,7 +253,7 @@ html{
 
 
 .sidenav{
-    background-color: #14406c;
+    background-color: #1a1e28;
 }
 
 
@@ -265,7 +268,7 @@ html{
     padding: 50px 0px ;
     flex-direction: column;
     display: flex;
-    background-color: #faf8ef;
+    background-color: #1a1e28;
 }
 
 
@@ -301,23 +304,25 @@ html{
 /*SERVICES*/
 #services{
     padding: 50px 0;
-    background-color: #14406c;
+    background-color: #1a1e28;
     color: #fffefe;
     
 }
 
 .Container{
-    color: #faf8ef;
+    color: #1999d5;
 }
-#services h1{
-    padding-bottom: 40px;
-    text-align: center;
+.listes-services1 h3{
+    color: #ec008c;
 }
 
+.listes-services1 li{
+    color:#fff200;
+}
 
 .btn.btn-primary{
     background-color: #fff;
-    color: #14406c;
+    color: #1a1e28;
     font-weight: 500;
     text-transform: uppercase;
     border: none;
@@ -333,18 +338,19 @@ html{
 
 .btn.btn-primary:hover{
     background-color: #fff;
-    color: #1999d5;
+    color: #ec008c;
     transform: translateY(-10px);
 }
 /*************************************A PROPOS******************************************************/
 #info{
     overflow: hidden;
-    background-color: #faf8ef;
+    background-color: #1a1e28;
 }
 #info h2{
     text-align: center;
     text-transform: uppercase;
     margin:  30px auto;
+    color: #ec008c;
 }
 .carousel-container{
     margin-top: 20px;
@@ -363,14 +369,14 @@ html{
   }
 
 #info .btn.btn-primary{
-    background-color: #14406c;
-    color: #fff;
+    background-color: #ec008c;
+    color: #faf8ef;
 }
 
 #info .btn.btn-primary:hover{
-    background-color: #fff;
-    color: #14406c;
-    border:  2px solid #14406c; 
+    background-color: #faf8ef;
+    color: #ec008c;
+    border:  2px solid #ec008c; 
 }
 /*************************************FOOTER******************************************************/
 
@@ -379,7 +385,7 @@ html{
 #footer{
     bottom: 0;
     position:relative;
-    background-color: black;
+    background-color: #000;
     width: 100%;
     overflow: hidden;
 }
@@ -398,6 +404,11 @@ html{
 
 .column ul a{
     color: #fffefe;
+    transition: color 0.3s ease;
+}
+
+.column ul a:hover{
+    color: #ec008c;
 }
 
 .column h2{
@@ -410,8 +421,15 @@ html{
     text-align: center;    
 }
 
+
+
 .column ul li i{
     padding-right: 10px; 
     font-size: 30px; 
     color: #fffefe; 
+}
+.column ul li i:hover{
+    padding-right: 10px; 
+    font-size: 30px; 
+    color: #00aeef; 
 }

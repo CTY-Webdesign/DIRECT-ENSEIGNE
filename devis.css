@@ -16,7 +16,7 @@ html{
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #14406c;
+        background-color: #1a1e28;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -32,7 +32,7 @@ html{
     }
     .mobilenav a:hover{
         text-decoration: none;
-        color: #1a99d5;
+        color: #ec008c;
     }
     .open-btn {
         color: #fffeff;
@@ -44,17 +44,19 @@ html{
     }
     .btn-devis {
         text-transform: uppercase;
-        background-color: #faf8ef;
-        color: #14406c;
+        background-color: #ec008c;
+        color: #faf8ef;
         text-decoration: none;
-        border: 2px solid #faf8ef;
+        border: 2px solid #ec008c;
         border-radius: 16px;
         transition: border 0.3s ease;
         
     }
     
     .btn-devis:hover {
-        border-color: #1a99d5;
+        border-color: #faf8ef;
+        background-color: #faf8ef;
+        border: #ec008c solid 2px;
     }
     
     .btn-devis p{
@@ -62,19 +64,20 @@ html{
         padding: 5px;
         font-weight: 500;
         align-items: center;
-        color: #14406c;
+        color: #faf8ef;
         font-size:15px ;
         transition: color 0.2s ease;
         
     }
     .btn-devis p:hover {
-        color: #1a99d5;
+        color: #ec008c;
         border-radius: 16px;
     }
 
     .sidenav a{
         display: none;
     }
+
 
 
 
@@ -145,7 +148,7 @@ html{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        background-color: #14406c;
+        background-color: #1a1e28;
         height: 50px;
         font-size:20px;
         text-align: right;
@@ -160,7 +163,7 @@ html{
     
     }
     .sidenav a:hover{
-        color: #1a99d5;
+        color: #ec008c;
         text-decoration: none;
         
     }
@@ -170,17 +173,18 @@ html{
     }
     .btn-devis {
         text-transform: uppercase;
-        background-color: #faf8ef;
-        color: #14406c;
+        background-color: #ec008c;
+        color: #faf8ef;
         text-decoration: none;
-        border: 2px solid #faf8ef;
+        border: 2px solid #ec008c;
         border-radius: 16px;
-        transition: border 0.3s ease;
+        transition: border 0.3s ease, background-color 0.3s ease, color 0.3s ease;
         
     }
     
     .btn-devis:hover {
-        border-color: #1a99d5;
+        border-color: #ec008c;
+        background-color: #faf8ef;
     }
     
     .btn-devis p{
@@ -188,27 +192,27 @@ html{
         padding: 10px;
         font-weight: 500;
         align-items: center;
-        color: #14406c;
+        color: #faf8ef;
         font-size:15px ;
         transition: color 0.2s ease;
         
     }
     .btn-devis p:hover {
-        color: #1a99d5;
+        color: #ec008c;
         border-radius: 16px;
-    }    
+    }
 }
 
 
 .sidenav{
-    background-color: #14406c;
+    background-color: #1a1e28;
 }
 /*************************************NAVBAR SECTION******************************************************/
 
 
 /************************************FORM******************************************************/
 #mainpage {
-    background-color: #faf8ef;
+    background-color: #1a1e28;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -218,6 +222,7 @@ html{
 
 .info-container {
     text-align: center;
+    color:#faf8ef ;
 }
 
 .info-container img {
@@ -241,6 +246,10 @@ html{
     
 }
 
+.form label{
+    color: #faf8ef;
+}
+
 .form form {
     display: flex;
     flex-direction: column;
@@ -260,7 +269,7 @@ html{
     margin: 0 auto;
     padding-bottom: 20px;
     text-transform: uppercase;
-    color: #14406c;
+    color: #ec008c;
     
 
 }
@@ -270,14 +279,17 @@ html{
     justify-content: center;
     margin: 0 auto;
     width: 250px;
-    background-color: #14406c;
+    background-color: #ec008c;
     color: white;
 }
 /*************************************FOOTER******************************************************/
+
+
+
 #footer{
     bottom: 0;
     position:relative;
-    background-color: black;
+    background-color: #000;
     width: 100%;
     overflow: hidden;
 }
@@ -296,6 +308,11 @@ html{
 
 .column ul a{
     color: #fffefe;
+    transition: color 0.3s ease;
+}
+
+.column ul a:hover{
+    color: #ec008c;
 }
 
 .column h2{
@@ -308,8 +325,15 @@ html{
     text-align: center;    
 }
 
+
+
 .column ul li i{
     padding-right: 10px; 
     font-size: 30px; 
     color: #fffefe; 
+}
+.column ul li i:hover{
+    padding-right: 10px; 
+    font-size: 30px; 
+    color: #00aeef; 
 }
